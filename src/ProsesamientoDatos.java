@@ -3,9 +3,10 @@ import mx.com.sintelti.desafios.oporx.Solucion;
 public class ProsesamientoDatos implements Solucion
 {
 
-    public void prosesamientoDatos(String frace)
+    public String prosesamientoDatos(String frace)
     {
-       convertir(frace);
+       String contestacion = convertir(frace);
+       return contestacion;
     }
 
     @Override
@@ -31,6 +32,4 @@ public class ProsesamientoDatos implements Solucion
         }
         return respuesta;
     }
-
-
 }
