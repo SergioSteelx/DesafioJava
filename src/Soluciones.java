@@ -7,6 +7,8 @@ public class Soluciones
         //String prueba1 = "Hola mundo";
         String prueba1 = "esto es otro ejemplo practico";
 
-        data.prosesamientoDatos(prueba1);
+        String respuesta = data.prosesamientoDatos(prueba1);
+
+        System.out.println(respuesta);
     }
 }
