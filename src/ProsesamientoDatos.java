@@ -5,13 +5,18 @@ public class ProsesamientoDatos implements Solucion
 
     public void prosesamientoDatos(String frace)
     {
-        int largo = frace.length();
+       convertir(frace);
+    }
+
+    @Override
+    public String convertir(String entrada) {
+        int largo = entrada.length();
         String respuesta = "";
         int j =0;
         for (int i = 0; i < largo; i++)
         {
 
-            if (i == frace.indexOf('o',i))
+            if (i == entrada.indexOf('o',i))
             {
                 j++;
                 for (int x = 0; x<j; x++){
@@ -20,10 +25,12 @@ public class ProsesamientoDatos implements Solucion
             }
             else
             {
-                respuesta = respuesta + frace.substring(i,i+1);
+                respuesta = respuesta + entrada.substring(i,i+1);
             }
 
         }
+        return respuesta;
     }
+
 
 }
